@@ -23,3 +23,7 @@ for (my $i =1; $i <= 4; $i++) {
     last;
   }
 }
+
+if ($guessed_number != $random_number) {
+  print "You ran out of guesses. The answer was $random_number";
+}
