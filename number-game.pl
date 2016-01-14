@@ -9,7 +9,6 @@ print "Let's play a game! Pick a number between 1-100. You have 5 guesses.\n";
 our $guessed_number = <STDIN>;
 
 for (my $i =1; $i <= 4; $i++) {
-  print "$random_number $guessed_number";
   if ($guessed_number > $random_number) {
     print "Your guess was too high! You have guessed $i times. Try again.\n";
     our $guessed_number = <STDIN>;
@@ -19,7 +18,7 @@ for (my $i =1; $i <= 4; $i++) {
     our $guessed_number = <STDIN>;
   }
   else {
-    print "You guessed the number! The answer was $random_number\n";
+    print "You guessed the number in $i trys! The answer was $random_number\n";
     last;
   }
 }
