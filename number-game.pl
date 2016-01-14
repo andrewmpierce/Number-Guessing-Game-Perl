@@ -10,6 +10,11 @@ my $guessed_number = <STDIN>;
 
 while ($guessed_number != $random_number) {
   print "$random_number $guessed_number";
+  if ($guessed_number > $random_number) {
+    print "Your guess was too high! Try again.";
+    my $guessed_number = <STDIN>;
+
+  }
 
 
 }
